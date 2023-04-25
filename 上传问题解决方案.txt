@@ -1,0 +1,22 @@
+
+完美解决 fatal: unable to access 'https://github.com/.../.git': Could not resolve host: github.com
+有用代理进的，打开代理服务器，看好端口，比如我的是7890
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+
+
+3、接下来在本地创建一个文件夹，
+
+4、把github上面的仓库克隆到本地
+
+git clone https://github.com/xxxxx（https://github.com/xxxxx替换成你之前复制的地址）
+
+5、把需要上传的文件拷贝到刚下载的新文件夹内
+
+6、接下来依次输入以下代码即可完成其他剩余操作：
+
+git add . （注：别忘记后面的.，此操作是把Test文件夹下面的文件都添加进来）
+
+git commit -m “提交信息” （注：“提交信息”里面换成你需要，如“first commit”）
+
+git push -u origin master （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
