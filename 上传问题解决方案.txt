@@ -20,3 +20,24 @@ git add . （注：别忘记后面的.，此操作是把Test文件夹下面的�
 git commit -m “提交信息” （注：“提交信息”里面换成你需要，如“first commit”）
 
 git push -u origin master （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
+
+
+git push提交出现Everything up-to-date提示问题
+
+ 出现这个错误原因，其实就是没有正确执行指令造成的，也就是没有正常提交数据。
+
+一般按照以下命令提交，基本就没什么问题了——
+
+git add . #添加当前目录下的所有文件到暂存区：
+git commit -m "message" #提交暂存区文件到仓库，-m表示可以直接输入后面的message
+git push origin main 
+复制
+git push 命用于从将本地的分支版本上传到远程并合并。
+
+命令格式如下：
+
+git push <远程主机名> <本地分支名>:<远程分支名>
+复制
+如果本地分支名与远程分支名相同，则可以省略冒号：
+
+git push <远程主机名> <本地分支名>
